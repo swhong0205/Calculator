@@ -1,0 +1,41 @@
+{
+  "name": "Calculator",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Lapin",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "apsl-react-native-button": "^3.0.2",
+    "lodash": "^4.17.2",
+    "react": "15.3.2",
+    "react-native": "0.37.0",
+    "react-native-splash-screen": "^1.0.9"
+  },
+  "jest": {
+    "modulePaths": [
+      "<rootDir>/src/"
+    ],
+    "transform": {
+      ".*": "<rootDir>/node_modules/babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element)"
+    ],
+    "preset": "jest-react-native"
+  },
+  "bugs": {
+    "url": "https://github.com/lelandrichardson/enzyme-example-jest/issues"
+  },
+  "devDependencies": {
+    "babel-jest": "17.0.2",
+    "babel-preset-react-native": "1.9.0",
+    "jest": "17.0.2",
+    "jest-cli": "^0.8.2",
+    "jest-react-native": "17.0.2",
+    "react-native-mock": "^0.2.7",
+    "react-test-renderer": "15.3.2"
+  }
+}
